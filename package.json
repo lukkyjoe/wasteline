@@ -17,6 +17,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "express": "^4.15.4",
     "react": "16.0.0-alpha.12",
     "react-instantsearch": "^4.0.10",
     "react-native": "^0.47.0",
