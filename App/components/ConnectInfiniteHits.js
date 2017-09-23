@@ -79,20 +79,31 @@ const Hits = connectInfiniteHits(({ hits, hasMore, refine, props }) => {
     );
   };
 
+// if (item.brand) {return ()}
+
   return (
     <List style={styles.ListContainer}>
       <FlatList
         data={hits}
         keyExtractor={(item, index) => item.objectID}
-        renderItem={({ item }) => (
-          <ListItem style={styles.ListItem}
-            roundAvatar
-            title={`${item.object}`}
-            avatar={{ uri: item.image_url }}
-            containerStyle={{ borderBottomWidth: 0 }}
-            onPress={()=>{ handleProfile(item); }}
-          />
-        )}
+        renderItem={({ item }) => {
+          let brand = (item) => {
+            if (item.brand.length){
+              return '(' + item.brand + ')';
+            } else {
+              return "";
+            }
+          }
+          return (
+            <ListItem style={styles.ListItem}
+              roundAvatar
+              title={`${item.object} ${brand(item)}`}
+              avatar={{ uri: item.image_url }}
+              containerStyle={{ borderBottomWidth: 0 }}
+              onPress={()=>{ handleProfile(item); }}
+            />
+          )  
+        }}
         ItemSeparatorComponent={this.renderSeparator}
         ListFooterComponent={this.renderFooter}
       />

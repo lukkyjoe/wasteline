@@ -25,7 +25,7 @@ const binType = (color) => {
     break;
   case 'compost': type = 'Compost', icon = 'http://www.recycling.com/wp-content/uploads/2016/06/recycling-symbol-icon-twotone-dark-green.png';
     break;
-  case 'landfill': type = 'Landfill', icon = 'http://www.recycling.com/wp-content/uploads/2016/06/recycling-symbol-icon-twotone-black.png';
+  case 'landfill': type = 'Landfill', icon = 'https://d30y9cdsu7xlg0.cloudfront.net/png/3058-200.png';
     break;    
   case 'recyclable_elsewhere': type = 'Recyclable elsewhere', icon = 'https://cdn4.iconfinder.com/data/icons/recycle-and-environment-vol-2/600/home-Building-estate-house-Conservation-green-recycle-recycling-Ecology-environment-packaging-512.png';
   }
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5
   }
 });
+console.disableYellowBox = true;
 
 export default class Profile extends Component {
   constructor(props) {
@@ -171,7 +172,7 @@ All electronics are ok for drop off. Appliances, TV's,  printers and general hou
           </View>
         </View>
         <View style={ styles.tableCell }>
-          <Text>Brand name</Text>
+          <Text>Brand name: {this.props.currentProfile.brand}</Text>
         </View>      
         <View style={ styles.tableCell }>
           {/* <Text>Material type: {item.material}</Text> */}
