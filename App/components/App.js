@@ -8,9 +8,9 @@ import { StackNavigator } from 'react-navigation';
 const App = StackNavigator({
   Landing: { 
     screen: Landing,
-    // navigationOptions: ({navigation}) => ({
-    //   header: null
-    // }),
+    navigationOptions: ({navigation}) => ({
+      header: null
+    }),
   },
   Profile: { 
     screen: Profile,

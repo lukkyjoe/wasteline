@@ -23,7 +23,7 @@ const binType = (color) => {
   switch (color) {
   case 'recycle_bin': type = 'Recycle', icon = 'http://www.recycling.com/wp-content/uploads/2016/06/recycling-symbol-icon-twotone-dark-blue.png';
     break;
-  case 'compost': type = 'Compost', icon = 'http://www.recycling.com/wp-content/uploads/2016/06/recycling-symbol-icon-twotone-dark-green.png';
+  case 'compost': type = 'Compost', icon = 'https://s3-us-west-1.amazonaws.com/wasteline-images/compost.png';
     break;
   case 'landfill': type = 'Landfill', icon = 'https://d30y9cdsu7xlg0.cloudfront.net/png/3058-200.png';
     break;    
@@ -102,7 +102,6 @@ export default class Profile extends Component {
   }
   
   handleUpvote() {
-    console.log('hiiiiiiii');
     this.props.upvote();
   }
 
