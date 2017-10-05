@@ -6,11 +6,11 @@ import {
   View,
 } from 'react-native';
 const Footer = ({props}) =>(
-  <View style={[styles.LadningFooter]}>
-    <View style={styles.LadningFooterText}>
+  <View style={[styles.LandingFooter]}>
+    <View style={styles.LandingFooterText}>
       <Text>FOOTER PLACE HOLDER1</Text>
     </View>
-    <View style={styles.LadningFooterIcon}>
+    <View style={styles.LandingFooterIcon}>
       <TouchableOpacity>
         <Text>TOUCH PLACE HOLDER</Text>
       </TouchableOpacity>
@@ -18,16 +18,16 @@ const Footer = ({props}) =>(
   </View>
 );
 const styles = {
-  LadningFooter: {
+  LandingFooter: {
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'green',
     justifyContent: 'space-around'
   },
-  LadningFooterText: {
+  LandingFooterText: {
     justifyContent: 'center'
   },
-  LadningFooterIcon: {
+  LandingFooterIcon: {
     justifyContent: 'center'
   }
 };
