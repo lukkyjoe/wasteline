@@ -1,4 +1,4 @@
-#DEMO
+# DEMO
 Demo video: https://www.youtube.com/watch?time_continue=1&v=j5--Gg_l8A0  
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
